@@ -1,0 +1,20 @@
+PROFILE PAGE README
+
+Runs with $node profilePage
+
+Runs at localhost:3000
+		->displays Index Layout
+	localhost:3000/user/profilePage
+		-> displays profilePage Layout
+
+Edits to .handlebars files DON'T require localhost restart
+Edits to .js files DO require localhost restart
+
+Structure derived from node.js login system tutorial by Traversy Media
+	       link to source:	https://www.youtube.com/watch?v=Z1ktxiqyiLA
+
+
+
+
+Author: Jerdon Helgeson
+Last updated:	12-21-18

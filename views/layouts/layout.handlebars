@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile Page</title>
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <!--<script src="../public/images"></script>-->
+
+    </head>
+    <body>
+
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/user/logout">Logout <span class="sr-only">(current)</span></a>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Options</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="/user/settings">Settings</a>
+              <a class="dropdown-item" href="/user/editInfo">Edit Information</a>
+              <!--<a class="dropdown-item" href="#">Something else here</a>-->
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+        
+        
+              <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+            <div class = "row">
+                <div class = "col">
+                    <h1 class="display-3"> Butch T. Cougar </h1>
+                    <p>Description: Junior at WSU pursuing a degree in Computer Science </p>
+                    <p><a class="btn btn-primary btn-lg" href="/user/profilepage" role="button">View Profile &raquo;</a></p>
+                </div>
+                <div class = "col">
+                    <!--<p align = 'right'>Profile Picture</p>-->
+                    <script>
+                      var path = document.location.pathname;
+                      console.log("Layout path: ",path);
+                    </script>
+                    <img src="/images/Butch.jpg" onerror="this.src = 'https://pbs.twimg.com/profile_images/906309853127204865/8yZ9AFI7_400x400.jpg'" alt="Profile Pic" width="200" height="200" align = 'right'> <!-- ../../public/images/Butch.jpg... https://pbs.twimg.com/profile_images/906309853127204865/8yZ9AFI7_400x400.jpg ...width="304" height="236">-->
+                </div>
+            </div>
+        </div>
+      </div>
+        {{{body}}}
+        <br>
+        <br>
+        <br>
+      <div class="container">
+        <!-- Example row of columns -->
+        <br>
+        <div class="row">
+          <div class="col-md-3 centeralign">
+            <h2>Academics</h2>
+            <p>View Academic Records and Status</p>
+            <br>
+            <p><a class="btn btn-secondary" href="/user/academic" role="button">View Academics &raquo;</a></p>
+          </div>
+          <div class="col-md-3 centeralign">
+            <h2>Settings</h2>
+            <p>Adjust Page settings</p>
+            <br>
+            <p><a class="btn btn-secondary" href="/user/settings" role="button">Edit Settings &raquo;</a></p>
+          </div>
+          <div class="col-md-3 centeralign">
+            <h2>Your Profile</h2>
+            <p class> Update Personal Information</p>
+             <br>
+            <p><a class="btn btn-secondary" href="/user/editInfo" role="button">Edit User Information &raquo;</a></p>
+          </div>
+          <div class="col-md-3 centeralign">
+            <h2>Extracurriculars</h2>
+            <p> Access Information on Sports, Clubs, and other Activities</p>
+            <p><a class="btn btn-secondary" href="/user/extracurriculars" role="button">Extracurriculars &raquo;</a></p>
+          </div>
+        </div>
+
+        <hr>
+
+      </div> <!-- /container -->
+    </body>
+</html>
